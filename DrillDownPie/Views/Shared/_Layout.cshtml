@@ -5,8 +5,18 @@
     <meta charset="utf-8">
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
 </head>
-<div class="greeting">Использование Круговой дрель-диаграммы </div>
 <body>
+    <div class="fullscreen-bg">
+        <div class="overlay">
+            <h1>Использование<br>крговой дрель-диаграммы</h1>
+        </div>
+        <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
+            <source src="@Url.Content("~/Content/Assets/vbv.mp4")" type="video/mp4">
+            <source src="video/plane.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="greeting">Использование Круговой дрель-диаграммы </div>
     @RenderBody()
+
 </body>
 </html>
