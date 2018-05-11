@@ -1,22 +1,20 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/scripts/jquery-3.3.1.min.js")
 </head>
 <body>
     <div class="fullscreen-bg">
         <div class="overlay">
-            <h1>Использование<br>крговой дрель-диаграммы</h1>
+            <h1>Использование<br>круговой дрель-диаграммы</h1>
         </div>
         <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
             <source src="@Url.Content("~/Content/Assets/vbv.mp4")" type="video/mp4">
             <source src="video/plane.webm" type="video/webm">
         </video>
     </div>
-    <div class="greeting">Использование Круговой дрель-диаграммы </div>
     @RenderBody()
-
 </body>
 </html>
