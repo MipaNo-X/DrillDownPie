@@ -40,10 +40,20 @@
         display: none;
     }
 }
-    .chartContainer {
+
+    #backButton {
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #2eacd1;
+    color: white;
     position: absolute;
-    top:0;
-    left:0;
-    display:none;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
-  
+
+    .invisible {
+    display: none;
+}
