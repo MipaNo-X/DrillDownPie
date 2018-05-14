@@ -10,17 +10,22 @@ namespace DrillDownPie.Controllers
 {
     public class HomeController : Controller
     {
-        BookContext db = new BookContext();
         public ActionResult Index()
         {
-            // получаем из бд все объекты Book
-            IEnumerable<Book> books = db.Books;
-            // передаем все объекты в динамическое свойство Books в ViewBag
-            ViewBag.Books = books;
-            // возвращаем представление
-           
+            List<DataPoint> dataPoints = new List<DataPoint>{
+                new DataPoint(10),
+                new DataPoint(20),
+                new DataPoint(30),
+                new DataPoint(40),
+                new DataPoint(50)
+            };
+
+            ViewBag.DataPoints = JsonConvert.SerializeObject(dataPoints);
 
             return View();
+
+
+         
 
         }
        

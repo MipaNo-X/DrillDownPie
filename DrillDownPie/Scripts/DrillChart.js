@@ -16,8 +16,10 @@
             dataPoints: [
                 { y: 519960, name: "New Visitors", color: "#E7823A" },
                 { y: 363040, name: "Returning Visitors", color: "#546BC1" },
-                { y: 36300, name: "POOF| Visitors", color: "#546BC1" }
+                { y: 36300, name: "POOF| Visitors", color: "#546BC1" },
+              
             ]
+         
         }],
         "New Visitors": [{
             color: "#E7823A",
@@ -43,7 +45,7 @@
                 { y: 363040, name: "Returning Visitors", color: "#546BC1" },
                 { y: 36300, name: "POOF| Visitors", color: "#546BC1" }
             ]
-        }]
+        }]       
     };
 
     var newVSReturningVisitorsOptions = {
@@ -106,5 +108,5 @@
         chart.options.data = visitorsData["New vs Returning Visitors"];
         chart.render();
     });
-
+   
 }
