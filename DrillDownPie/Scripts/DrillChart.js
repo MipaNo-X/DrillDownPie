@@ -29,13 +29,19 @@
             ]
         }],
         "Returning Visitors": [{
+            innerRadius: "75%",
+            legendMarkerType: "square",
+            name: "New vs Returning Visitors",
+            radius: "100%",
+            showInLegend: true,
+            startAngle: 90,
             color: "#546BC1",
             name: "Returning Visitors",
             type: "pie",
             dataPoints: [
-
-
-                { x: new Date("1 Dec 2015"), y: 34400 }
+                { y: 519960, name: "New Visitors", color: "#E7823A" },
+                { y: 363040, name: "Returning Visitors", color: "#546BC1" },
+                { y: 36300, name: "POOF| Visitors", color: "#546BC1" }
             ]
         }]
     };
