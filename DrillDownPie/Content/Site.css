@@ -33,7 +33,6 @@
     }
 @media (max-width: 767px) {
     .fullscreen-bg {
-        background: url('../images/plane.jpg') center center / cover no-repeat;
     }
 
     .fullscreen-bg__video {
